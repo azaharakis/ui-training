@@ -47,3 +47,4 @@ function Person(){
 
 var p = new Person();
 ```
+//TODO: Show a practical example with binding events
