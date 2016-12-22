@@ -5,7 +5,7 @@ export { lesson as lesson1_1 } from './1. Defining Variables/lesson';
 export { lesson as lesson1_2 } from './2. Modules/lesson';
 export { lesson as lesson1_3 } from './3. Functions/lesson';
 export { lesson as lesson1_4 } from './4. Spread Operators/lesson';
-export { lesson as lesson1_5 } from './5. Template Strings/lesson';
+export { lesson as lesson1_6 } from './5. Template Strings/lesson';
 
 export default class Page extends Component {
     render() {
@@ -18,6 +18,7 @@ export default class Page extends Component {
                     <li><Link to="/intro-to-es6/functions"> Functions </Link></li>
                     <li><Link to="/intro-to-es6/spread-operators"> Spread Operators </Link></li>
                     <li><Link to="/intro-to-es6/template-strings"> Template Strings </Link></li>
+                    <li><Link to="/intro-to-es6/classes"> Classes </Link></li>
                 </ul>
 
                 { this.props.children }
