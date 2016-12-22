@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import * as stuff from './1. Defining Variables/lesson';
 
-console.log(stuff.bar)
+export { lesson1_1 } from './1. Defining Variables/lesson';
+export { lesson1_2 } from './2. Modules/lesson';
+export { lesson1_3 } from './3. Functions/lesson';
+
 export default class Page extends Component {
     render() {
         return (
@@ -11,6 +13,7 @@ export default class Page extends Component {
                 <ul>
                     <li><Link to="/intro-to-es6/defining-variables"> Defining Variables </Link></li>
                     <li><Link to="/intro-to-es6/modules"> Modules </Link></li>
+                    <li><Link to="/intro-to-es6/functions"> Functions </Link></li>
                 </ul>
 
                 { this.props.children }
