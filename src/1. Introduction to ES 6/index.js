@@ -16,6 +16,7 @@ export default class Page extends Component {
                     <li><Link to="/intro-to-es6/modules"> Modules </Link></li>
                     <li><Link to="/intro-to-es6/functions"> Functions </Link></li>
                     <li><Link to="/intro-to-es6/spread-operators"> Spread Operators </Link></li>
+                    <li><Link to="/intro-to-es6/template-strings"> Template Strings </Link></li>
                 </ul>
 
                 { this.props.children }

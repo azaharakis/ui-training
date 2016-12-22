@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 
 import App from './App';
-import Intro, { lesson1_1, lesson1_2, lesson1_3, lesson1_4 } from './1. Introduction to ES 6';
+import Intro, { lesson1_1, lesson1_2, lesson1_3, lesson1_4, lesson1_5 } from './1. Introduction to ES 6';
 
 export default () => (
     <Router history={browserHistory}>
@@ -12,6 +12,7 @@ export default () => (
                 <Route path={`modules`} component={lesson1_2} />
                 <Route path={`functions`} component={lesson1_3} />
                 <Route path={`spread-operators`} component={lesson1_4} />
+                <Route path={`template-strings`} component={lesson1_5} />
             </Route>
         </Route>
     </Router>
