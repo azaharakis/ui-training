@@ -6,6 +6,7 @@ export default class App extends Component {
   render() {
     return (
         <div>
+            <h2>Modules</h2>
             <ul>
                 <li><Link to="/intro-to-es6">Introduction to ES 6</Link></li>
             </ul>
