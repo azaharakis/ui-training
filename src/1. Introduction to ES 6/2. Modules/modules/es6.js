@@ -1,4 +1,7 @@
-export const foo = 'hi';
+export function myFunc () {
+    return 'myFunc'
+};
+
 export default function() {
-    return 'hello'
+    return 'default'
 }

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export { lesson1_1 } from './1. Defining Variables/lesson';
-export { lesson1_2 } from './2. Modules/lesson';
-export { lesson1_3 } from './3. Functions/lesson';
-export { lesson1_4 } from './4. Spread Operators/lesson';
+export { lesson as lesson1_1 } from './1. Defining Variables/lesson';
+export { lesson as lesson1_2 } from './2. Modules/lesson';
+export { lesson as lesson1_3 } from './3. Functions/lesson';
+export { lesson as lesson1_4 } from './4. Spread Operators/lesson';
+export { lesson as lesson1_5 } from './5. Template Strings/lesson';
 
 export default class Page extends Component {
     render() {
