@@ -7,9 +7,8 @@ export default class App extends Component {
     return (
         <div>
             <ul>
-                <li><Link to="/1">Introduction to ES 6</Link></li>
+                <li><Link to="/intro-to-es6">Introduction to ES 6</Link></li>
             </ul>
-
             {this.props.children}
         </div>
     );
