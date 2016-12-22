@@ -1,13 +1,13 @@
 ### vars
 Javascript is a dynamic language. Assigning a variable a certain value will define its type
-```
+```js
 var foo = 'hello' | Type string
 var bar = 5 | Type number
 ```
 
 ### Hoisting
 Because variable declarations (and declarations in general) are processed before any code is executed, declaring a variable anywhere in the code is equivalent to declaring it at the top
-```
+```js
 bla = 2
 var bla;
 // ...
@@ -23,7 +23,7 @@ let allows you to declare variables that are limited in scope to the block, stat
 This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block
 scope.
 
-```
+```js
 function varTest() {
   var x = 1;
   if (true) {
