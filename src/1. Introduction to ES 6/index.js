@@ -8,6 +8,8 @@ export { lesson1_2 }
 export { lesson as lesson1_3 } from './3. Functions/lesson';
 export { lesson as lesson1_4 } from './4. Spread Operators/lesson';
 export { lesson as lesson1_6 } from './5. Template Strings/lesson';
+import * as lesson1_7 from './7. Array Operations';
+export { lesson1_7 }
 
 export default class Page extends Component {
     render() {
@@ -21,6 +23,7 @@ export default class Page extends Component {
                     <li><Link to="/intro-to-es6/spread-operators"> Spread Operators </Link></li>
                     <li><Link to="/intro-to-es6/template-strings"> Template Strings </Link></li>
                     <li><Link to="/intro-to-es6/classes"> Classes </Link></li>
+                    <li><Link to="/intro-to-es6/array-operations"> Array Operations </Link></li>
                 </ul>
 
                 { this.props.children }

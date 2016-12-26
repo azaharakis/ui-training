@@ -8,7 +8,8 @@ import Intro, {
     lesson1_3,
     lesson1_4,
     lesson1_5,
-    lesson1_6
+    lesson1_6,
+    lesson1_7
 } from './1. Introduction to ES 6';
 
 
@@ -35,6 +36,7 @@ export default () => (
                 <Route path={`spread-operators`} component={createLessonAsReactComponent(lesson1_4)} />
                 <Route path={`template-strings`} component={createLessonAsReactComponent(lesson1_5)} />
                 <Route path={`classes`} component={createLessonAsReactComponent(lesson1_6)} />
+                <Route path={`array-operations`} component={createLessonAsReactComponent(lesson1_7)} />
             </Route>
         </Route>
     </Router>
