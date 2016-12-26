@@ -8,6 +8,7 @@ We are going to be focusing on common js and ES6 modules.
 ### Things to know
 - Module paths are relative in node
 - If you are importing a dependency from node_modules (npm) then the module should not start with a path but the name of the module in package.json
+- if you import a directory and there is a filename index.js that is the file that will be imported.
 - when importing modules, it is acceptable to ignore the extension if it's a javascript file.
 
 ### Common JS

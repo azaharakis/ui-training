@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export { lesson as lesson1_1 } from './1. Defining Variables/lesson';
-export { lesson as lesson1_2 } from './2. Modules/lesson';
+import * as lesson1_1 from './1. Defining Variables';
+export { lesson1_1 }
+import * as lesson1_2 from './2. Modules';
+export { lesson1_2 }
 export { lesson as lesson1_3 } from './3. Functions/lesson';
 export { lesson as lesson1_4 } from './4. Spread Operators/lesson';
 export { lesson as lesson1_6 } from './5. Template Strings/lesson';

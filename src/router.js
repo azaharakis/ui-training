@@ -2,9 +2,28 @@ import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 
 import App from './App';
-import Intro, { lesson1_1, lesson1_2, lesson1_3, lesson1_4, lesson1_5, lesson1_6 } from './1. Introduction to ES 6';
+import Intro, {
+    lesson1_1,
+    lesson1_2,
+    lesson1_3,
+    lesson1_4,
+    lesson1_5,
+    lesson1_6
+} from './1. Introduction to ES 6';
 
-const createLessonAsReactComponent = lesson => () => lesson ? <div>{lesson()}</div> : <div />;
+
+
+const createLessonAsReactComponent = ({lesson, test} = {})=> () => {
+    class Page extends React.Component {
+        componentDidMount() {
+            test ? test() : null;
+        }
+        render() {
+            return <div></div>
+        }
+    }
+    return <Page />;
+};
 
 export default () => (
     <Router history={browserHistory}>
