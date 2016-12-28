@@ -13,6 +13,7 @@ export default class App extends Component {
                 <ul className="crumbs">
                     <li><Link to="/intro-to-es6">Introduction to ES 6</Link></li>
                     <li><Link to="/webpack">Webpack</Link></li>
+                    <li><Link to="/react">React</Link></li>
                 </ul>
                 { this.props.children }
             </div>

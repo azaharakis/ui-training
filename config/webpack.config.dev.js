@@ -79,7 +79,12 @@ module.exports = {
       'react-native': 'react-native-web'
     }
   },
-  
+    externals: {
+        'react/lib/ExecutionEnvironment': true,
+        'react/addons': true,
+        'react/lib/ReactContext': 'window'
+    },
+
   module: {
     loaders: [
       // Default loader: load all assets that are not handled

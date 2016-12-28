@@ -13,6 +13,9 @@ import Lesson1, {
     lesson1_7
 } from './1. Introduction to ES 6';
 import Lesson2 from './2. Webpack';
+import Lesson_React,{
+    lesson3_1
+} from './3. React'
 
 export default () => (
     <Router history={browserHistory}>
@@ -27,6 +30,9 @@ export default () => (
                 <Route path={`array-operations`} component={createLessonAsReactComponent(lesson1_7)} />
             </Route>
             <Route path={`webpack`} component={Lesson2} />
+            <Route path={`react`} component={Lesson_React}>
+                <Route path={`components`} component={createLessonAsReactComponent(lesson3_1)} />
+            </Route>
         </Route>
     </Router>
 )
