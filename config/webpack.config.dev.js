@@ -7,6 +7,13 @@ var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeMod
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
 
+var marked = require("marked");
+marked.setOptions({
+    highlight: function (code) {
+        return require('highlight.js').highlightAuto(code).value;
+    }
+});
+var renderer = new marked.Renderer();
 
 
 // Webpack uses `publicPath` to determine where the app is being served from.
@@ -84,7 +91,9 @@ module.exports = {
         'react/addons': true,
         'react/lib/ReactContext': 'window'
     },
-
+    markdownLoader: {
+        renderer: renderer
+    },
   module: {
     loaders: [
       // Default loader: load all assets that are not handled
@@ -116,7 +125,9 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
-      { test: /\.md$/, loader: "html!markdown" },
+      { test: /\.md$/,
+          loader: "html!markdown"
+      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,

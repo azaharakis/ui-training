@@ -2,7 +2,7 @@
 The more complexity in your web application the additional consideration you will want to make when serving assets to your users.
 
 ### What we used to do
-```js
+```html
 <script src='path/to/file-1.js'></script>
 <script src='path/to/file-2.js'></script>
 ...

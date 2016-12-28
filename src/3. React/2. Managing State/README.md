@@ -63,5 +63,5 @@ If you wish to learn more about this you can find out [more...](https://facebook
 ### React lifecycle methods
 You'll notice we implemented the method `componentDidMount`, this is a method react provides to the developer to allow for state changes.
 As mentioned above this lifecycle triggers immediately after the initial render on the browser. There are more lifecycle hooks
- provided and you can read [...more](https://facebook.github.io/react/docs/react-component.html#componentwillmount) 
+ provided and you can read [more...](https://facebook.github.io/react/docs/react-component.html#componentwillmount) 
  

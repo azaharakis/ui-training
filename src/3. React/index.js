@@ -13,8 +13,8 @@ export default class Page extends Component {
             <div>
                 <h2>React</h2>
                 <ul className="crumbs">
-                    <li><Link to="/react/components"> Components </Link></li>
-                    <li><Link to="/react/state"> Managing State </Link></li>
+                    <li><Link activeClassName="active" to="/react/components"> Components </Link></li>
+                    <li><Link activeClassName="active" to="/react/state"> Managing State </Link></li>
                 </ul>
                 <div className="lesson-content">
                     { this.props.children }

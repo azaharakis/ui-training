@@ -7,7 +7,7 @@
 It is very common to want to apply transformations to a set of items, particularly for displaying on the UI.
 
 ### Map
-```
+```js
 var numbers = [1, 5, 10, 15];
 var roots = numbers.map(function(x){
    return x * 2;
@@ -22,7 +22,7 @@ var roots = numbers.map(Math.sqrt);
 ```
 
 ### Filter
-```
+```js
 function isBigEnough(value) {
   return value >= 10;
 }
@@ -33,7 +33,7 @@ var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 
 
 ### Reduce
-```
+```js
 var sum = [0, 1, 2, 3].reduce(function(a, b) {
   return a + b;
 }, 0);

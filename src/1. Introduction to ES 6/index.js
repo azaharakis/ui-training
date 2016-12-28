@@ -22,13 +22,13 @@ export default class Page extends Component {
             <div>
                 <h2>Introduction to ES6</h2>
                 <ul className="crumbs">
-                    <li><Link to="/intro-to-es6/defining-variables"> Defining Variables </Link></li>
-                    <li><Link to="/intro-to-es6/modules"> Modules </Link></li>
-                    <li><Link to="/intro-to-es6/functions"> Functions </Link></li>
-                    <li><Link to="/intro-to-es6/spread-operators"> Spread Operators </Link></li>
-                    <li><Link to="/intro-to-es6/template-strings"> Template Strings </Link></li>
-                    <li><Link to="/intro-to-es6/classes"> Classes </Link></li>
-                    <li><Link to="/intro-to-es6/array-operations"> Array Operations </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/defining-variables"> Defining Variables </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/modules"> Modules </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/functions"> Functions </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/spread-operators"> Spread Operators </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/template-strings"> Template Strings </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/classes"> Classes </Link></li>
+                    <li><Link activeClassName="active" to="/intro-to-es6/array-operations"> Array Operations </Link></li>
                 </ul>
                 <div className="lesson-content">
                     { this.props.children }
