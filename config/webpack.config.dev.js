@@ -99,6 +99,7 @@ module.exports = {
       {
         exclude: [
           /\.html$/,
+          /\.md$/,
           /\.(js|jsx)$/,
           /\.css$/,
           /\.json$/,
@@ -110,6 +111,7 @@ module.exports = {
           name: 'static/media/[name].[hash:8].[ext]'
         }
       },
+      { test: /\.md$/, loader: "html!markdown" },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,

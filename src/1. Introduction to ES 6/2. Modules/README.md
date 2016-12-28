@@ -1,4 +1,4 @@
-Javascript has a lot of different ways we can define modules,
+### Javascript has a lot of different ways we can define modules,
 - [AMD](http://requirejs.org/)
 - [common js](http://wiki.commonjs.org/wiki/Modules/1.1)
 - [ES6] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/import)
