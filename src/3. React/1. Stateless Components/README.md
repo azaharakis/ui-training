@@ -39,6 +39,7 @@ const MyComponent = (props) => {
 ```
 - Using brackets `{}` between JSX tags executes javascript otherwise a string of text will just represent a text node.
 `<div>{myVariable}</div>` myVariable is a variable `<div>myVariable</div>` myVariable is text
+- Assigning a class attr is done using `className` as class is a reserved word in javascript 
 - When creating a stateless component you need to import React, as it's required to apply the JSX transformation
 - Components can call other components
 ```js
