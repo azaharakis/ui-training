@@ -1,8 +1,4 @@
-## React Components
-
-### Declaring a react component
-
-#### Stateless components
+## Stateless components
 
 Creating a react component is as simple as:
 ```
