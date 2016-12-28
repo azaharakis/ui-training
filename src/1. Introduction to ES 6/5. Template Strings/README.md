@@ -9,7 +9,7 @@ I can put what ever I want and preserve line breaks
 `
 ```
 
-Template literals are enclosed by the back-tick (` `) (grave accent) character instead of double or single quotes.
+Template literals are enclosed by the back-tick (\` \`) (grave accent) character instead of double or single quotes.
 
 ```js
 const myVar = 'world'
