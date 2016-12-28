@@ -1,5 +1,9 @@
 export default (testName, test) => {
     console.log(testName);
-    test();
-    console.log('Correct !')
+    try{
+        test();
+        console.log('Correct !')
+    }catch(e) {
+        console.error(e)
+    }
 }

@@ -7,7 +7,7 @@ import 'highlight.js/styles/github-gist.css';
 
 export default class App extends Component {
     render() {
-        document.getElementById('console-log-text').innerHTML = '';
+        console.clear();
         return (
             <div className="app">
                 <h2>Modules</h2>
