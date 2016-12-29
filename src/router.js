@@ -18,6 +18,7 @@ import Lesson_React,{
     lesson3_2
 } from './3. React'
 import Lesson4 from './4. Writing css at scale';
+import Lesson5 from './5. Encapsulating Components';
 
 export default () => (
     <Router history={browserHistory}>
@@ -39,6 +40,7 @@ export default () => (
                 <IndexRedirect to="components" />
             </Route>
             <Route path={`css`} component={Lesson4} />
+            <Route path={`encapsulation`} component={Lesson5} />
         </Route>
     </Router>
 )
