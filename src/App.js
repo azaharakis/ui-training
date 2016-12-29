@@ -13,7 +13,7 @@ export default class App extends Component {
                 <h2>Modules</h2>
                 <ul className="crumbs">
                     <li><Link activeClassName="active" to="/intro-to-es6">Introduction to ES 6</Link></li>
-                    <li><Link activeClassName="active" to="/webpack">Webpack</Link></li>
+                    <li><Link activeClassName="active" to="/tools">Tools</Link></li>
                     <li><Link activeClassName="active" to="/react">React</Link></li>
                     <li><Link activeClassName="active" to="/css">Writing css at scale</Link></li>
                     <li><Link activeClassName="active" to="/encapsulation">Encapsulating Components</Link></li>

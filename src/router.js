@@ -12,8 +12,11 @@ import Lesson1, {
     lesson1_6,
     lesson1_7
 } from './1. Introduction to ES 6';
-import Lesson2 from './2. Webpack';
-import Lesson_React,{
+import Lesson2,{
+    lesson2_1,
+    lesson2_2
+} from './2. Build Tools'
+import Lesson3,{
     lesson3_1,
     lesson3_2
 } from './3. React'
@@ -33,8 +36,12 @@ export default () => (
                 <Route path={`array-operations`} component={createLessonAsReactComponent(lesson1_7)} />
                 <IndexRedirect to="defining-variables" />
             </Route>
-            <Route path={`webpack`} component={Lesson2} />
-            <Route path={`react`} component={Lesson_React}>
+            <Route path={`tools`} component={Lesson2}>
+                <Route path={`babel`} component={createLessonAsReactComponent(lesson2_1)} />
+                <Route path={`webpack`} component={createLessonAsReactComponent(lesson2_2)} />
+                <IndexRedirect to="babel" />
+            </Route>
+            <Route path={`react`} component={Lesson3}>
                 <Route path={`components`} component={createLessonAsReactComponent(lesson3_1)} />
                 <Route path={`state`} component={createLessonAsReactComponent(lesson3_2)} />
                 <IndexRedirect to="components" />

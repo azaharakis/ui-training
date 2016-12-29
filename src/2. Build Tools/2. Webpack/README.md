@@ -65,7 +65,7 @@ $ grunt
 This works well enough, but for complex configurations using an imperative syntax for setting up tasks can often become hard to reason about;
 particularly if you did things in the wrong order, and particularly when you want to do more sophisticated things.
 
-This is a [grunt file](./sample-grunt.js) we had in one of our earlier projects that demonstrates some of this complexity
+This is a [grunt file](sample-grunt.js) we had in one of our earlier projects that demonstrates some of this complexity
 
 ### [Webpack](https://github.com/petehunt/webpack-howto)
 
