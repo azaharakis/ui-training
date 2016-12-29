@@ -14,7 +14,8 @@ import Lesson1, {
 } from './1. Introduction to ES 6';
 import Lesson2,{
     lesson2_1,
-    lesson2_2
+    lesson2_2,
+    lesson2_3
 } from './2. Build Tools'
 import Lesson3,{
     lesson3_1,
@@ -39,6 +40,7 @@ export default () => (
             <Route path={`tools`} component={Lesson2}>
                 <Route path={`babel`} component={createLessonAsReactComponent(lesson2_1)} />
                 <Route path={`webpack`} component={createLessonAsReactComponent(lesson2_2)} />
+                <Route path={`package-management`} component={createLessonAsReactComponent(lesson2_3)} />
                 <IndexRedirect to="babel" />
             </Route>
             <Route path={`react`} component={Lesson3}>
