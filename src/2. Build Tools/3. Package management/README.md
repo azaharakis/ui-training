@@ -12,7 +12,7 @@ Yarn is a tool developed by facebook that can often be used in replacement for N
  - Deterministic package installations, through a [yarn.lock](https://yarnpkg.com/en/docs/yarn-lock) file
  
 
-### package.json and shrinkwrap | yarn.lock
+### package.json and (shrinkwrap | yarn.lock)
 Packages (Dependencies) can be added to a project via `npm install --save package-name` or `yarn add package-name`
 in doing so you'll notice an addition to the package.json file in your project.
 
@@ -34,4 +34,6 @@ a clean `npm install` or `yarn` will update you to the most recent major version
  which are specifying loose versions. `yarn.lock` and `npm-shrinkwrap.json` will map through your dependencies
  recursively and essentially create a manifest of all dependency versions at that point in time.
  
+### [dependencies and devDependencies](https://yarnpkg.com/en/docs/dependency-types)
+Dependencies serve many different purposes. Some dependencies are needed to build your project, others are needed when you’re running your program. As such there are a number of different types of dependencies that you can have (e.g. dependencies, devDependencies, and peerDependencies). 
  
