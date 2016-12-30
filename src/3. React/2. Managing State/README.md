@@ -21,7 +21,9 @@ class App extends React.Component {
         ))
     }
     componentDidMount(){
-        fetch('https://service.iproperty.com/properties').then(properties => {
+        fetch('https://service.iproperty.com/properties')
+        .then( response => response.json() )
+        .then( properties => {
             //properties = [{address: '123 Fake st', img: 'https://hello.com/img.gif'}, ... ];
             this.setState({
                 loading: false,
