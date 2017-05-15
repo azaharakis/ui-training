@@ -2,6 +2,7 @@
 
 Creating a react component is as simple as:
 ```js
+import React from 'react';
 // Define the Component
 const MyComponent = (props) => {
     return (
